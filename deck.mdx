@@ -72,6 +72,35 @@ import BGImage from './components/bg-image'
 </div>
 
 ---
+# Gunakan Aturan 7 Standard REST action di Controller
+---
+<img src={require("file-loader!./images/dhh-tweet.png")}/>
+---
+### Resource
+
+- Index
+- Show
+- Create
+- Store
+- Edit
+- Update
+- Destroy
+---
+### API Resource
+
+- Index
+- Show
+- ~~Create~~
+- Store
+- ~~Edit~~
+- Update
+- Destroy
+---
+<CodeBlock>{`
+php artisan make:controller ProductsController --resource
+php artisan make:controller ProductsController --api
+`}</CodeBlock>
+---
 # Gunakan Jobs
 
 Kode yang berulang di kontroller dapat dipecah menjadi sebuah `Job`
