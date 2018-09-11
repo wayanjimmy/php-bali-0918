@@ -1,0 +1,103 @@
+import 'style-loader!css-loader!codemirror/lib/codemirror.css'
+import 'codemirror/mode/php/php'
+import {Head} from 'mdx-deck'
+export { swiss as theme } from 'mdx-deck/themes'
+
+import 'style-loader!css-loader!./style.css'
+import Introduction from './components/introduction'
+import {CodeBlock} from './components/code-block'
+import {ternaryOperatorsCode} from './components/ternary-operators-code'
+import {routeVerbsCode} from './components/route-verbs-code'
+import {jobsCode} from './components/jobs-code'
+import {jobsCallerCode} from './components/jobs-caller-code'
+import {
+  beforeCode as queryObjectBeforeCode,
+  afterCode as queryObjectAfterCode,
+  callerCode as queryObjectCallerCode
+} from './components/query-object-code'
+
+<Head>
+  <title>1% Lebih baik dengan Laravel</title>
+</Head>
+
+# 1% Lebih baik dengan Laravel
+
+<img src={require("file-loader!./images/laravel-logo.png")} width={200} />
+
+---
+<Introduction />
+
+---
+# Framework yang pernah dipakai
+
+- [Codeigniter](https://www.codeigniter.com/)
+- [Slimframework](https://www.slimframework.com/)
+- [Laravel](https://laravel.com/) 🔥
+
+---
+# Kesalahan saya
+
+- Gaya kode tidak konsisten
+- Menggunakan pattern yang kurang sesuai
+- Kode sulit untuk diubah
+
+---
+# Mari belajar dari kesalahan
+
+<small>
+  <i>Pengalaman adalah guru terbaik</i>
+</small>
+
+---
+# Gaya Kode
+
+- [PSR2](https://www.php-fig.org/psr/psr-2/)
+- [Spatie Laravel Guidelines](https://guidelines.spatie.be/code-style/laravel-php)
+
+---
+<CodeBlock style={{fontSize: 20}}>{ternaryOperatorsCode}</CodeBlock>
+---
+<CodeBlock style={{fontSize: 20}}>{routeVerbsCode}</CodeBlock>
+---
+
+### Jangan menggunakan *pattern* karena terlihat *keren*
+<small>namun dari masalah apa yang akan dipecahkan</small>
+---
+
+### Ketika kode mulai besar dan kompleks
+<small>mulai pecah menjadi beberapa kode kecil</small>
+---
+# Gunakan Jobs
+
+Kode yang berulang di kontroller dapat dipecah menjadi sebuah `Job`
+---
+<CodeBlock style={{fontSize: 20}}>{jobsCode}</CodeBlock>
+---
+<CodeBlock style={{fontSize: 20}}>{jobsCallerCode}</CodeBlock>
+---
+# Gunakan Query Object
+---
+### Query filter untuk menampilkan list bisa sangat panjang
+---
+<CodeBlock>{queryObjectBeforeCode}</CodeBlock>
+---
+<CodeBlock>{queryObjectAfterCode}</CodeBlock>
+---
+<CodeBlock>{queryObjectCallerCode}</CodeBlock>
+---
+# Belajar dari Membaca Source Code
+---
+- [Laravel.io](https://github.com/laravelio/portal)
+- [Blender](https://github.com/spatie/blender)
+- [Laravel Shop](https://github.com/summerblue/laravel-shop)
+---
+# Sourcegraph
+
+[https://sourcegraph.com/](https://sourcegraph.com/)
+---
+
+# Matur Suksma
+
+[1-persen-lebih-baik-dengan-laravel](https://1-persen-lebih-baik-dengan-laravel.netlify.com)
+
+<img src={require("file-loader!./images/twitter.svg")} style={{width: 70, margin: -20}} /> <a href="https://twitter.com/wayanjimmy">@wayanjimmy</a>

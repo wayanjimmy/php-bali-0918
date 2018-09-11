@@ -1,0 +1,22 @@
+{
+  "name": "phpbali-talk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "mdx-deck deck.mdx"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "mdx-deck": "^1.7.1",
+    "style-loader": "^0.23.0"
+  },
+  "dependencies": {
+    "codemirror": "^5.40.0",
+    "react-codemirror2": "^5.1.0"
+  }
+}
