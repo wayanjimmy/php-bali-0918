@@ -12,6 +12,7 @@ import {
   afterCode as queryObjectAfterCode,
   callerCode as queryObjectCallerCode
 } from './components/query-object-code'
+import BGImage from './components/bg-image'
 
 <Head>
   <title>1% Lebih baik dengan Laravel</title>
@@ -39,7 +40,7 @@ import {
 - Kode sulit untuk diubah
 
 ---
-# Mari belajar dari kesalahan
+# Belajar dari kesalahan
 
 <small>
   <i>Pengalaman adalah guru terbaik</i>
@@ -63,6 +64,13 @@ import {
 
 ### Ketika kode mulai besar dan kompleks
 <small>mulai pecah menjadi beberapa kode kecil</small>
+---
+# Simpan Semua Models dalam folder Models
+---
+<div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+  <img src={require("file-loader!./images/models-dir.png")} width="90%" />
+</div>
+
 ---
 # Gunakan Jobs
 
@@ -92,7 +100,15 @@ Kode yang berulang di kontroller dapat dipecah menjadi sebuah `Job`
 
 [https://sourcegraph.com/](https://sourcegraph.com/)
 ---
+<img src={require("file-loader!./images/sourcegraph.png")}/>
+---
 
+# Tautan Terkait
+
+- [Laracast: Whip Monstrous Code into Shape](https://laracasts.com/series/whip-monstrous-code-into-shape)
+- [Adam Wathan: Cruddy by Design](https://github.com/adamwathan/laracon2017)
+
+---
 # Matur Suksma
 
 [1-persen-lebih-baik-dengan-laravel](https://1-persen-lebih-baik-dengan-laravel.netlify.com)
