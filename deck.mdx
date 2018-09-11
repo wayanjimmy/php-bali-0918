@@ -1,9 +1,6 @@
-import 'style-loader!css-loader!codemirror/lib/codemirror.css'
-import 'codemirror/mode/php/php'
 import {Head} from 'mdx-deck'
 export { swiss as theme } from 'mdx-deck/themes'
 
-import 'style-loader!css-loader!./style.css'
 import Introduction from './components/introduction'
 import {CodeBlock} from './components/code-block'
 import {ternaryOperatorsCode} from './components/ternary-operators-code'
@@ -55,9 +52,9 @@ import {
 - [Spatie Laravel Guidelines](https://guidelines.spatie.be/code-style/laravel-php)
 
 ---
-<CodeBlock style={{fontSize: 20}}>{ternaryOperatorsCode}</CodeBlock>
+<CodeBlock>{ternaryOperatorsCode}</CodeBlock>
 ---
-<CodeBlock style={{fontSize: 20}}>{routeVerbsCode}</CodeBlock>
+<CodeBlock>{routeVerbsCode}</CodeBlock>
 ---
 
 ### Jangan menggunakan *pattern* karena terlihat *keren*
@@ -71,17 +68,17 @@ import {
 
 Kode yang berulang di kontroller dapat dipecah menjadi sebuah `Job`
 ---
-<CodeBlock style={{fontSize: 20}}>{jobsCode}</CodeBlock>
+<CodeBlock fontSize="18px">{jobsCode}</CodeBlock>
 ---
-<CodeBlock style={{fontSize: 20}}>{jobsCallerCode}</CodeBlock>
+<CodeBlock>{jobsCallerCode}</CodeBlock>
 ---
 # Gunakan Query Object
 ---
 ### Query filter untuk menampilkan list bisa sangat panjang
 ---
-<CodeBlock>{queryObjectBeforeCode}</CodeBlock>
+<CodeBlock fontSize="18px">{queryObjectBeforeCode}</CodeBlock>
 ---
-<CodeBlock>{queryObjectAfterCode}</CodeBlock>
+<CodeBlock fontSize="18px">{queryObjectAfterCode}</CodeBlock>
 ---
 <CodeBlock>{queryObjectCallerCode}</CodeBlock>
 ---
