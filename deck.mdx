@@ -33,11 +33,15 @@ import BGImage from './components/bg-image'
 - [Laravel](https://laravel.com/) 🔥
 
 ---
+
+<img src={require("file-loader!./images/code_review_gone_wrong.jpg")} width="90%" />
+
+---
 # Kesalahan saya
 
-- Gaya kode tidak konsisten
-- Menggunakan pattern yang kurang sesuai
-- Kode sulit untuk diubah
+1. Gaya kode tidak konsisten
+2. Sering membuat class yang gendut (Contoh: Controller dengan 15 method didalamnya)
+3. Menggunakan pattern yang kurang sesuai
 
 ---
 # Belajar dari kesalahan
@@ -47,7 +51,7 @@ import BGImage from './components/bg-image'
 </small>
 
 ---
-# Gaya Kode
+# Perbaiki Kesalahan #1
 
 - [PSR2](https://www.php-fig.org/psr/psr-2/)
 - [Spatie Laravel Guidelines](https://guidelines.spatie.be/code-style/laravel-php)
@@ -58,9 +62,7 @@ import BGImage from './components/bg-image'
 <CodeBlock>{routeVerbsCode}</CodeBlock>
 ---
 
-### Jangan menggunakan *pattern* karena terlihat *keren*
-<small>namun dari masalah apa yang akan dipecahkan</small>
----
+# Perbaiki Kesalahan #2
 
 ### Ketika kode mulai besar dan kompleks
 <small>mulai pecah menjadi beberapa kode kecil</small>
@@ -101,6 +103,13 @@ php artisan make:controller ProductsController --resource
 php artisan make:controller ProductsController --api
 `}</CodeBlock>
 ---
+# Perbaiki Kesalahan #3
+
+### Jangan menggunakan *pattern* karena terlihat *keren*
+<small>namun dari masalah apa yang akan dipecahkan</small>
+---
+### Lebih baik menerapkan cara-cara yang lebih mudah dan sederhana
+---
 # Gunakan Jobs
 
 Kode yang berulang di kontroller dapat dipecah menjadi sebuah `Job`
@@ -119,8 +128,9 @@ Kode yang berulang di kontroller dapat dipecah menjadi sebuah `Job`
 ---
 <CodeBlock>{queryObjectCallerCode}</CodeBlock>
 ---
-# Belajar dari Membaca Source Code
+# Belajar sedikit saja tetapi setiap hari
 ---
+# Membaca projek sumber terbuka
 - [Laravel.io](https://github.com/laravelio/portal)
 - [Blender](https://github.com/spatie/blender)
 - [Laravel Shop](https://github.com/summerblue/laravel-shop)
